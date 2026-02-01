@@ -1,81 +1,34 @@
-name: N9G9 - Protected Master Sync (Daily)
+name: N9G9 - Special Sync 3.9.7 (Manual)
 on:
-  schedule:
-    - cron: '0 0 * * *' # 每天凌晨 00:00 巡检
-  workflow_dispatch:      # 允许随时手动救急
+  workflow_dispatch: # 仅手动触发
 
 jobs:
-  # -------------------------------------------------------------------
-  # 1️⃣ 保护模式同步：防止 reset --hard 抹除本脚本
-  # -------------------------------------------------------------------
-  code_absolute_sync:
+  sync_397:
     runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 1
-
-      - name: Forced Mirror with Protection
-        run: |
-          git config --global user.name "GitHub Action"
-          git config --global user.email "action@github.com"
-          
-          echo "🟢 [手术区：备份] 正在将工作流脚本移入临时隔离区..."
-          mkdir -p ../wf_backup
-          cp .github/workflows/*.yml ../wf_backup/
-          
-          echo "🟡 [清场区：同步] 执行上游强力对齐..."
-          git remote add upstream https://github.com/youhunwl/TVAPP.git
-          git fetch upstream main --depth=1
-          git checkout main
-          git reset --hard upstream/main
-          
-          echo "🟢 [手术区：植回] 正在从隔离区恢复工作流脚本..."
-          mkdir -p .github/workflows
-          cp ../wf_backup/*.yml .github/workflows/
-          
-          echo "🔵 [提交区：入库] 确保持久化存储..."
-          git add .github/workflows/
-          git commit -m "System: Auto-protect workflows after absolute sync" || echo "No change"
-          git push origin main --force
-
-  # -------------------------------------------------------------------
-  # 2️⃣ FMApp 增量同步：API 模式，秒级搬运
-  # -------------------------------------------------------------------
-  fmapp_release_sync:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    steps:
-      - name: Instant Sync FMApp
+      - name: Fetch and Release 3.9.7
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           TARGET_REPO: ${{ github.repository }}
-          SOURCE_REPO: "lystv/fmapp"
-          PREFIX: "FM-"
-        run: |
-          latest_rel=$(gh api repos/$SOURCE_REPO/releases/latest)
-          raw_tag=$(echo "$latest_rel" | jq -r '.tag_name')
-          my_tag="${PREFIX}${raw_tag}"
+          RELEASE_TAG: "OKPRO-3.9.7"
           
-          if gh release view "$my_tag" -R "$TARGET_REPO" >/dev/null 2>&1; then
-            echo "✅ FMApp 版本 $my_tag 已存在，跳过。"
-            exit 0
-          fi
+          # 🎯 指向你电脑备份后上传到 apk 仓库的 3.9.7 下载地址
+          URL_V7A: "https://raw.githubusercontent.com/sowahsun/apk/main/okprotv3.9.7_v7a.apk"
+          URL_V8A: "https://raw.githubusercontent.com/sowahsun/apk/main/okprotv3.9.7_v8a.apk"
 
-          echo "🚀 发现 FMApp 新版本: $raw_tag"
-          title=$(echo "$latest_rel" | jq -r '.name // "New FM Release"')
-          body=$(echo "$latest_rel" | jq -r '.body // "Incremental Update"')
+        run: |
+          echo "🚀 正在抓取 3.9.7 版本资产..."
+          curl -L -o "okprotv_3.9.7_v7a.apk" "$URL_V7A"
+          curl -L -o "okprotv_3.9.7_v8a.apk" "$URL_V8A"
 
-          gh release create "$my_tag" -R "$TARGET_REPO" --title "FMApp: $title" --notes "$body"
-
-          assets=$(echo "$latest_rel" | jq -r '.assets[] | select(.name | endswith(".apk")) | .browser_download_url')
-          for url in $assets; do
-            orig_name=$(basename "$url")
-            curl -L -o "$orig_name" "$url"
-            gh release upload "$my_tag" "$orig_name" --clobber -R "$TARGET_REPO"
-            rm -f "$orig_name"
-          done
+          echo "📦 正在发布到 N9G9 Release..."
+          gh release create "$RELEASE_TAG" \
+            "okprotv_3.9.7_v7a.apk" \
+            "okprotv_3.9.7_v8a.apk" \
+            -R "$TARGET_REPO" \
+            --title "OKPro TV 3.9.7" \
+            --notes "Stable Version: Optimized for newer Android systems."
+          
+          echo "🎉 3.9.7 抓取完成！"
