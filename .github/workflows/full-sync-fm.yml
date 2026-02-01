@@ -1,0 +1,63 @@
+name: TVAPP - Full FM History Sync
+on:
+  workflow_dispatch: # 手动触发
+
+jobs:
+  clone_all:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Clone All to TVAPP
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          UPSTREAM: "lystv/fmapp"
+          PREFIX: "FM-" # 🎯 增加前缀，防止未来与其他作者冲突
+        run: |
+          # 1. 获取原作者所有 Release 标签
+          tags=$(gh api repos/$UPSTREAM/releases --jq '.[].tag_name')
+
+          for tag in $tags; do
+            my_tag="${PREFIX}${tag}"
+            echo "-----------------------------------"
+            echo "处理版本: $tag -> 映射为: $my_tag"
+            
+            # 检查 TVAPP 中是否已存在该标签
+            if gh release view "$my_tag" >/dev/null 2>&1; then
+              echo "跳过：$my_tag 已存在。"
+              continue
+            fi
+
+            # 2. 获取详情
+            release_info=$(gh api repos/$UPSTREAM/releases/tags/$tag)
+            title=$(echo "$release_info" | jq -r '.name // "No Title"')
+            body=$(echo "$release_info" | jq -r '.body // "No Description"')
+
+            # 3. 创建 Release 壳子
+            gh release create "$my_tag" --title "FM聚合: $title" --notes "$body"
+
+            # 4. 下载、重命名并上传
+            assets=$(echo "$release_info" | jq -r '.assets[] | select(.name | endswith(".apk")) | .browser_download_url')
+            
+            for url in $assets; do
+              orig_name=$(basename "$url")
+              curl -L -o "$orig_name" "$url"
+              
+              # 统一重命名逻辑
+              if [[ "$orig_name" == *"mobile"* ]]; then
+                target_name="fmapp_mobile.apk"
+              else
+                target_name="fmapp_tv.apk"
+              fi
+              
+              # 同时保留原名备份（可选）和上传洗白名
+              gh release upload "$my_tag" "$orig_name" --clobber
+              mv "$orig_name" "$target_name"
+              gh release upload "$my_tag" "$target_name" --clobber
+              
+              rm -f "$target_name"
+            done
+          done
