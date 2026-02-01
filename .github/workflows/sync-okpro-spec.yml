@@ -1,41 +1,40 @@
-name: N9G9 - Sync OKPro Special Version
+name: N9G9 - Sync OKPro (No Checkout)
 on:
-  workflow_dispatch: # 手动触发运行
+  workflow_dispatch: # 手动触发
 
 jobs:
-  convert_file_to_release:
+  sync_release_directly:
     runs-on: ubuntu-latest
     permissions:
-      contents: write
+      contents: write # 必须赋予写权限
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          # 🚀 提速核心：只看最新版，不拉取 500+ 个历史记录
-          # 这会让你的 3 分钟等待缩短到 10 秒钟！
-          fetch-depth: 1
-
-      - name: Fetch and Process
+      - name: Direct Download and Upload
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          # 目标文件地址
+          # 自动获取当前仓库名 (sowahsun/N9G9)
+          TARGET_REPO: ${{ github.repository }} 
           SOURCE_URL: "https://raw.githubusercontent.com/sowahsun/apk/main/okprotv3.9.3.apk"
           RELEASE_TAG: "OKPRO-3.9.3"
-          TARGET_NAME: "okprotv_3.9.3_v7a.apk"
+          FILE_NAME: "okprotv_3.9.3_v7a.apk"
         run: |
-          # 1. 检查防重
-          if gh release view "$RELEASE_TAG" >/dev/null 2>&1; then
-            echo "版本 $RELEASE_TAG 已存在，跳过。"
+          echo "🚀 模式：跳过代码拉取，直接操作 API"
+          
+          # 1. 检查版本是否存在 (注意增加了 -R 参数指定仓库)
+          if gh release view "$RELEASE_TAG" -R "$TARGET_REPO" >/dev/null 2>&1; then
+            echo "✅ 版本 $RELEASE_TAG 已存在，任务结束。"
             exit 0
           fi
 
-          # 2. 下载与改名
-          echo "正在下载并重命名..."
-          curl -L -o "temp.apk" "$SOURCE_URL"
-          mv "temp.apk" "$TARGET_NAME"
+          # 2. 下载文件 (直接下载到虚拟机临时目录)
+          echo "⬇️ 正在从源下载文件..."
+          curl -L -o "$FILE_NAME" "$SOURCE_URL"
 
-          # 3. 创建发布 (✅ 已删除报错的 --clobber)
-          echo "正在发布..."
-          gh release create "$RELEASE_TAG" "$TARGET_NAME" \
+          # 3. 创建 Release 并上传
+          # 关键点：使用 -R $TARGET_REPO 告诉指令操作哪个仓库，无需 Checkout
+          echo "⬆️ 正在发布到 $TARGET_REPO ..."
+          gh release create "$RELEASE_TAG" "$FILE_NAME" \
+            -R "$TARGET_REPO" \
             --title "重要版本备份: OKPro 3.9.3" \
-            --notes "此版本提取自 sowahsun/apk 并按要求进行了重命名。"
+            --notes "此版本提取自 sowahsun/apk 并按要求进行了重命名 (无需 Checkout 模式)。"
+
+          echo "🎉 成功！"
