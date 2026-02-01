@@ -1,6 +1,6 @@
 name: N9G9 - Sync OKPro Special Version
 on:
-  workflow_dispatch: # 手动触发运行
+  workflow_dispatch: 
 
 jobs:
   convert_file_to_release:
@@ -11,33 +11,33 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          # 🚀 保持极速拉取，跳过几百个历史 Commit
+          # 🚀 卸掉历史包袱，只拉取最新一层的代码快照
           fetch-depth: 1
 
       - name: Fetch and Process
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          # 目标文件地址
+          # 目标文件直连下载地址
           SOURCE_URL: "https://raw.githubusercontent.com/sowahsun/apk/main/okprotv3.9.3.apk"
           RELEASE_TAG: "OKPRO-3.9.3"
           TARGET_NAME: "okprotv_3.9.3_v7a.apk"
         run: |
-          # 1. 检查版本是否已存在，防止重复操作
+          # 检查标签是否已存在，防止重复操作
           if gh release view "$RELEASE_TAG" >/dev/null 2>&1; then
-            echo "版本 $RELEASE_TAG 已存在，无需重复同步。"
+            echo "版本 $RELEASE_TAG 已存在，跳过。"
             exit 0
           fi
 
-          # 2. 从源仓库下载
-          echo "正在下载原始 APK..."
-          curl -L -o "temp_original.apk" "$SOURCE_URL"
+          # 1. 下载原始 APK
+          echo "正在下载原始文件..."
+          curl -L -o "temp.apk" "$SOURCE_URL"
 
-          # 3. 物理重命名
+          # 2. 物理重命名
           echo "正在重命名为: $TARGET_NAME"
-          mv "temp_original.apk" "$TARGET_NAME"
+          mv "temp.apk" "$TARGET_NAME"
 
-          # 4. 【核心修复】：删除 --clobber 参数
-          echo "正在创建 Release 并上传..."
+          # 3. 【核心修正】：删除了错误的 --clobber 参数
+          echo "正在创建 Release 并上传附件..."
           gh release create "$RELEASE_TAG" "$TARGET_NAME" \
             --title "重要版本备份: OKPro 3.9.3" \
             --notes "此版本提取自 sowahsun/apk 并按要求进行了重命名。"
