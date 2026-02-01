@@ -11,31 +11,33 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          # 🚀 优化：只拉取最新一层记录，不拉取几百个 commit 历史，解决 checkout 慢的问题
+          # 🚀 提速核心：只拉取最新一层的代码，不拉取几百个历史 Commit
           fetch-depth: 1
 
       - name: Fetch and Process
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # 目标文件直连地址
           SOURCE_URL: "https://raw.githubusercontent.com/sowahsun/apk/main/okprotv3.9.3.apk"
           RELEASE_TAG: "OKPRO-3.9.3"
           TARGET_NAME: "okprotv_3.9.3_v7a.apk"
         run: |
-          # 检查是否已存在
+          # 1. 检查标签是否已存在
           if gh release view "$RELEASE_TAG" >/dev/null 2>&1; then
             echo "版本 $RELEASE_TAG 已存在，跳过。"
             exit 0
           fi
 
-          # 1. 下载原始文件 (日志显示这步之前是成功的)
-          echo "正在下载..."
-          curl -L -o "temp.apk" "$SOURCE_URL"
+          # 2. 下载原始文件 (这步之前在日志里是成功的)
+          echo "正在下载原始 APK..."
+          curl -L -o "temp_original.apk" "$SOURCE_URL"
 
-          # 2. 重命名
-          mv "temp.apk" "$TARGET_NAME"
+          # 3. 执行重命名
+          echo "正在重命名为: $TARGET_NAME"
+          mv "temp_original.apk" "$TARGET_NAME"
 
-          # 3. 创建 Release (✅ 已删除 --clobber)
-          echo "正在创建 Release..."
+          # 4. 创建 Release 并上传 (✅ 已移除不支持的 --clobber 参数)
+          echo "正在创建 Release 并上传附件..."
           gh release create "$RELEASE_TAG" "$TARGET_NAME" \
             --title "重要版本备份: OKPro 3.9.3" \
             --notes "此版本提取自 sowahsun/apk 并按要求进行了重命名。"
