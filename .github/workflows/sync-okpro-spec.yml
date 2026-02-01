@@ -11,7 +11,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          # 🚀 提速核心：只拉取最新一层的代码快照，不拉取 500+ 历史记录
+          # 🚀 提速核心：只看最新版，不拉取 500+ 个历史记录
+          # 这会让你的 3 分钟等待缩短到 10 秒钟！
           fetch-depth: 1
 
       - name: Fetch and Process
@@ -22,22 +23,19 @@ jobs:
           RELEASE_TAG: "OKPRO-3.9.3"
           TARGET_NAME: "okprotv_3.9.3_v7a.apk"
         run: |
-          # 1. 检查版本是否已存在
+          # 1. 检查防重
           if gh release view "$RELEASE_TAG" >/dev/null 2>&1; then
             echo "版本 $RELEASE_TAG 已存在，跳过。"
             exit 0
           fi
 
-          # 2. 下载原始文件 (这步在日志里本来就是成功的)
-          echo "正在下载原始 APK..."
-          curl -L -o "temp_original.apk" "$SOURCE_URL"
+          # 2. 下载与改名
+          echo "正在下载并重命名..."
+          curl -L -o "temp.apk" "$SOURCE_URL"
+          mv "temp.apk" "$TARGET_NAME"
 
-          # 3. 执行重命名
-          echo "正在重命名为: $TARGET_NAME"
-          mv "temp_original.apk" "$TARGET_NAME"
-
-          # 4. 【核心修复】：删除错误的 --clobber 参数
-          echo "正在创建 Release 并上传附件..."
+          # 3. 创建发布 (✅ 已删除报错的 --clobber)
+          echo "正在发布..."
           gh release create "$RELEASE_TAG" "$TARGET_NAME" \
             --title "重要版本备份: OKPro 3.9.3" \
             --notes "此版本提取自 sowahsun/apk 并按要求进行了重命名。"
