@@ -43,7 +43,7 @@ jobs:
           git push origin main --force
 
   # -------------------------------------------------------------------
-  # 2️⃣ FMApp 增量同步：API 模式，秒级搬运
+  # 2️⃣ FMApp 增量同步：API 模式，秒级搬运 (筛选 PRO 版)
   # -------------------------------------------------------------------
   fmapp_release_sync:
     runs-on: ubuntu-latest
@@ -57,7 +57,15 @@ jobs:
           SOURCE_REPO: "lystv/fmapp"
           PREFIX: "FM-"
         run: |
-          latest_rel=$(gh api repos/$SOURCE_REPO/releases/latest)
+          # [核心修改区]：获取 releases 列表，并筛选出 tag_name 包含 "pro" 的最新一个版本 (忽略大小写)
+          latest_rel=$(gh api repos/$SOURCE_REPO/releases | jq -c '[.[] | select(.tag_name | ascii_downcase | contains("pro"))][0]')
+          
+          # 防错处理：如果没有找到符合条件的 pro 版本，安全退出
+          if [ "$latest_rel" == "null" ] || [ -z "$latest_rel" ]; then
+            echo "❌ 未找到包含 pro 的新版本，跳过同步。"
+            exit 0
+          fi
+
           raw_tag=$(echo "$latest_rel" | jq -r '.tag_name')
           my_tag="${PREFIX}${raw_tag}"
           
