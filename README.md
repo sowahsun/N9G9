@@ -1,107 +1,202 @@
-# TVAPP 优质应用 TVBox点播直播源收集
+# 🚀 N9G9 极速应用商店
 
-> 所有资源均来自于各路大神无私分享，仅用于个人学习使用，严禁商用，如有侵权请联系删除。
+> ⚡️ **全自动同步上游更新**，为您提供最新、最全的 TVBox 壳子与影视聚合应用。
 
-收集整合各大 TV 版 APP，包含影视、游戏、K歌、工具等等，如有失效的软件请及时提issue告知，欢迎大家一同贡献。
+## 📦 最新应用一览表 (自动排版与更新)
 
-*[接口源](#接口源-)和[直播源](#直播源-)在下方*，欢迎分享有效接口。另外觉得好用请在右上角点个⭐Star 鼓励一下~
+| APP名称 | 更新日期 | 描述 | 下载直链 |
+| :--- | :--- | :--- | :--- |
+| **[FM-5.0.3-pro] mobile-pro.apk** | `2026-03-03` | 暂无详细描述 | [📥 下载](https://github.com/sowahsun/N9G9/releases/download/FM-5.0.3-pro/mobile-pro.apk) |
+| **[FM-5.0.3-pro] leanback-pro.apk** | `2026-03-03` | 暂无详细描述 | [📥 下载](https://github.com/sowahsun/N9G9/releases/download/FM-5.0.3-pro/leanback-pro.apk) |
+| **[FM-5.0.3-pro] leanback-pro-v8a.apk** | `2026-03-03` | 暂无详细描述 | [📥 下载](https://github.com/sowahsun/N9G9/releases/download/FM-5.0.3-pro/leanback-pro-v8a.apk) |
+| **[FM-5.0.5-pro] mobile-pro.apk** | `2026-03-03` | 暂无详细描述 | [📥 下载](https://github.com/sowahsun/N9G9/releases/download/FM-5.0.5-pro/mobile-pro.apk) |
+| **[FM-5.0.5-pro] leanback-pro.apk** | `2026-03-03` | 暂无详细描述 | [📥 下载](https://github.com/sowahsun/N9G9/releases/download/FM-5.0.5-pro/leanback-pro.apk) |
+| **[FM-5.0.5-pro] leanback-pro-v8a.apk** | `2026-03-03` | 暂无详细描述 | [📥 下载](https://github.com/sowahsun/N9G9/releases/download/FM-5.0.5-pro/leanback-pro-v8a.apk) |
+| **yourtv_v2.3.9.apk** | `2026-03-10` | 暂无详细描述 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/电视直播/yourtv_v2.3.9.apk) |
+| **FM影视TV端-32位_v5.2.6_正式版.apk** | `2026-03-06` | 暂无详细描述 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/影视/FongMi影视/5.2.6/FM影视TV端-32位_v5.2.6_正式版.apk) |
+| **FM影视TV端-64位_v5.2.6_正式版.apk** | `2026-03-06` | 暂无详细描述 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/影视/FongMi影视/5.2.6/FM影视TV端-64位_v5.2.6_正式版.apk) |
+| **FM影视手机端-32位_v5.2.6_正式版.apk** | `2026-03-06` | 暂无详细描述 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/影视/FongMi影视/5.2.6/FM影视手机端-32位_v5.2.6_正式版.apk) |
+| **FM影视手机端-64位_v5.2.6_正式版.apk** | `2026-03-06` | 暂无详细描述 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/影视/FongMi影视/5.2.6/FM影视手机端-64位_v5.2.6_正式版.apk) |
+| **金音3.15.64.240124125.apk** | `2026-03-04` | 暂无详细描述 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/K歌/金音/金音3.15.64.240124125.apk) |
+| **金音KTV2.15.68.2401261132.apk** | `2026-03-04` | 暂无详细描述 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/K歌/金音/金音KTV2.15.68.2401261132.apk) |
+| **金音·金尊专享会员版.apk** | `2026-03-04` | 暂无详细描述 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/K歌/金音/金音·金尊专享会员版.apk) |
+| **OK影视TV端-32位_v3.7.3_内置共存版.apk** | `2026-03-04` | 标准版 [安卓5专版下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/影视/OK影视/安卓5专版) | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/影视/OK影视/内置共存版/OK影视TV端-32位_v3.7.3_内置共存版.apk) |
+| **OK影视TV端-64位_v3.7.3_内置共存版.apk** | `2026-03-04` | 标准版 [安卓5专版下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/影视/OK影视/安卓5专版) | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/影视/OK影视/内置共存版/OK影视TV端-64位_v3.7.3_内置共存版.apk) |
+| **OK影视手机端-64位_v3.7.3_内置共存版.apk** | `2026-03-04` | 标准版 [安卓5专版下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/影视/OK影视/安卓5专版) | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/影视/OK影视/内置共存版/OK影视手机端-64位_v3.7.3_内置共存版.apk) |
+| **OK影视-手机版-3.7.3.apk** | `2026-03-03` | 标准版 [安卓5专版下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/影视/OK影视/安卓5专版) | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/影视/OK影视/OK影视-手机版-3.7.3.apk) |
+| **OK影视-电视版-3.7.3.apk** | `2026-03-03` | 标准版 [安卓5专版下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/影视/OK影视/安卓5专版) | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/影视/OK影视/OK影视-电视版-3.7.3.apk) |
+| **海信专版-OK影视-3.7.3.apk** | `2026-03-03` | 标准版 [安卓5专版下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/影视/OK影视/安卓5专版) | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/影视/OK影视/海信专版-OK影视-3.7.3.apk) |
+| **安卓5专版-OK影视-32位-3.7.2.apk** | `2026-02-28` | 标准版 [安卓5专版下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/影视/OK影视/安卓5专版) | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/影视/OK影视/安卓5专版/安卓5专版-OK影视-32位-3.7.2.apk) |
+| **安卓5专版-OK影视-64位-3.7.2.apk** | `2026-02-28` | 标准版 [安卓5专版下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/影视/OK影视/安卓5专版) | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/影视/OK影视/安卓5专版/安卓5专版-OK影视-64位-3.7.2.apk) |
+| **影视仓_6.1.9_opt_sign.apk** | `2026-02-28` | 安卓6.0及以上，不支持纯血鸿蒙，需设置接口源，本仓库下方有分享。[其他版本下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/影视/影视仓) | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/影视/影视仓/影视仓_6.1.9_opt_sign.apk) |
+| **TVBox_takagen99_20260227-1116-arm64-generic-java.apk** | `2026-02-28` | 空盒原版，分为白壳和黑壳版，具体进文件夹查看版本说明，需配置接口源 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/TVBox/TVBox_takagen99_20260227-1116-arm64-generic-java.apk) |
+| **TVBox_takagen99_20260227-1116-arm64-generic-python.apk** | `2026-02-28` | 空盒原版，分为白壳和黑壳版，具体进文件夹查看版本说明，需配置接口源 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/TVBox/TVBox_takagen99_20260227-1116-arm64-generic-python.apk) |
+| **TVBox_takagen99_20260227-1116-arm64-hisense-java.apk** | `2026-02-28` | 空盒原版，分为白壳和黑壳版，具体进文件夹查看版本说明，需配置接口源 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/TVBox/TVBox_takagen99_20260227-1116-arm64-hisense-java.apk) |
+| **TVBox_takagen99_20260227-1116-arm64-hisense-python.apk** | `2026-02-28` | 空盒原版，分为白壳和黑壳版，具体进文件夹查看版本说明，需配置接口源 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/TVBox/TVBox_takagen99_20260227-1116-arm64-hisense-python.apk) |
+| **TVBox_takagen99_20260227-1116-armeabi-generic-java.apk** | `2026-02-28` | 空盒原版，分为白壳和黑壳版，具体进文件夹查看版本说明，需配置接口源 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/TVBox/TVBox_takagen99_20260227-1116-armeabi-generic-java.apk) |
+| **TVBox_takagen99_20260227-1116-armeabi-generic-python.apk** | `2026-02-28` | 空盒原版，分为白壳和黑壳版，具体进文件夹查看版本说明，需配置接口源 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/TVBox/TVBox_takagen99_20260227-1116-armeabi-generic-python.apk) |
+| **TVBox_takagen99_20260227-1116-armeabi-hisense-java.apk** | `2026-02-28` | 空盒原版，分为白壳和黑壳版，具体进文件夹查看版本说明，需配置接口源 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/TVBox/TVBox_takagen99_20260227-1116-armeabi-hisense-java.apk) |
+| **TVBox_takagen99_20260227-1116-armeabi-hisense-python.apk** | `2026-02-28` | 空盒原版，分为白壳和黑壳版，具体进文件夹查看版本说明，需配置接口源 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/TVBox/TVBox_takagen99_20260227-1116-armeabi-hisense-python.apk) |
+| **JSYBOX-release-1.0.8.apk** | `2026-02-27` | 暂无详细描述 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/影视/JSYBOX-release-1.0.8.apk) |
+| **XPGBOX-release-1.6.1.apk** | `2026-02-27` | 暂无详细描述 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/影视/XPGBOX-release-1.6.1.apk) |
+| **七星影仓-TV6.1.7海信专版(点配置点确定).apk** | `2026-02-27` | 天微大佬基于影视仓内置接口源，内置点配置点确定 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/影视/七星影仓-TV6.1.7海信专版(点配置点确定).apk) |
+| **七星影仓-V3版-安卓4.x系统专用(点配置点确定).apk** | `2026-02-27` | 天微大佬基于影视仓内置接口源，内置点配置点确定 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/影视/七星影仓-V3版-安卓4.x系统专用(点配置点确定).apk) |
+| **七星影仓6.1.7-251103修复版(点配置点确定).apk** | `2026-02-27` | 天微大佬基于影视仓内置接口源，内置点配置点确定 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/影视/七星影仓6.1.7-251103修复版(点配置点确定).apk) |
+| **动漫鸭_10.1.0.apk** | `2026-02-27` | 动漫鸭是一款内置源的全新影视TV，虽然名字叫动漫鸭，但却是一款实打实的多线路源影视播放器，主要还是看内置的源，无需注册登录，无广告，无限制！ | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/影视/动漫鸭_10.1.0.apk) |
+| **好好看TV_1.1.0-免签会员版.apk** | `2026-02-27` | 暂无详细描述 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/影视/好好看TV_1.1.0-免签会员版.apk) |
+| **好好看_TV_1.1.2.apk** | `2026-02-27` | 暂无详细描述 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/影视/好好看_TV_1.1.2.apk) |
+| **宝盒TV版4.1.3(FM内置版).apk** | `2026-02-27` | 基于OK影视二开的内置源影视TV | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/影视/宝盒TV版4.1.3(FM内置版).apk) |
+| **宝盒手机版4.1.3(FM内置版).apk** | `2026-02-27` | 暂无详细描述 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/影视/宝盒手机版4.1.3(FM内置版).apk) |
+| **小苹果影视盒子-release-1.6.2.apk** | `2026-02-27` | 内置上百线路资源。免输入接口，安装即用 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/影视/小苹果影视盒子-release-1.6.2.apk) |
+| **新五岳影视TV4K.apk** | `2026-02-27` | 免扫4K神器，目前只有TV端，可看直播，无需设置，直接使用，新老片源几乎都有，4K+蓝光任意选择，4K免扫，基本满足日常需求 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/影视/新五岳影视TV4K.apk) |
+| **欧617.apk** | `2026-02-27` | 暂无详细描述 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/影视/欧617.apk) |
+| **飯太硬.apk** | `2026-02-27` | 暂无详细描述 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/影视/飯太硬.apk) |
+| **飯太硬_9.9.9.apk** | `2026-02-27` | 暂无详细描述 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/影视/飯太硬_9.9.9.apk) |
+| **魔617.apk** | `2026-02-27` | 暂无详细描述 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/影视/魔617.apk) |
+| **魔内6.1.7.apk** | `2026-02-27` | 暂无详细描述 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/影视/魔内6.1.7.apk) |
+| **MediaMix(原521影视)手机版-0.6.4.apk** | `2026-02-27` | 暂无详细描述 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/影视/MediaMix(原521影视)/MediaMix(原521影视)手机版-0.6.4.apk) |
+| **MediaMix(原521影视)电视版-1.4.8.apk** | `2026-02-27` | 暂无详细描述 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/影视/MediaMix(原521影视)/MediaMix(原521影视)电视版-1.4.8.apk) |
+| **XMBOX-leanback-arm64-v3.1.3.apk** | `2026-02-27` | 一个操作方便、界面简洁的Android视频播放器盒子，需自行添源，支持TV和手机双平台。 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/影视/XMBOX/XMBOX-leanback-arm64-v3.1.3.apk) |
+| **XMBOX-leanback-armv7-v3.1.3.apk** | `2026-02-27` | 一个操作方便、界面简洁的Android视频播放器盒子，需自行添源，支持TV和手机双平台。 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/影视/XMBOX/XMBOX-leanback-armv7-v3.1.3.apk) |
+| **XMBOX-mobile-arm64-v3.1.3.apk** | `2026-02-27` | 一个操作方便、界面简洁的Android视频播放器盒子，需自行添源，支持TV和手机双平台。 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/影视/XMBOX/XMBOX-mobile-arm64-v3.1.3.apk) |
+| **XMBOX-mobile-armv7-v3.1.3.apk** | `2026-02-27` | 一个操作方便、界面简洁的Android视频播放器盒子，需自行添源，支持TV和手机双平台。 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/影视/XMBOX/XMBOX-mobile-armv7-v3.1.3.apk) |
+| **XMBOX-tablet-arm64-v3.1.3.apk** | `2026-02-27` | 一个操作方便、界面简洁的Android视频播放器盒子，需自行添源，支持TV和手机双平台。 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/影视/XMBOX/XMBOX-tablet-arm64-v3.1.3.apk) |
+| **XMBOX-tablet-armv7-v3.1.3.apk** | `2026-02-27` | 一个操作方便、界面简洁的Android视频播放器盒子，需自行添源，支持TV和手机双平台。 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/影视/XMBOX/XMBOX-tablet-armv7-v3.1.3.apk) |
+| **影视仓-6.1.7-32位_海信版.apk** | `2026-02-27` | 安卓6.0及以上，不支持纯血鸿蒙，需设置接口源，本仓库下方有分享。[其他版本下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/影视/影视仓) | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/影视/影视仓/影视仓-6.1.7-32位_海信版.apk) |
+| **影视仓V3稳定版-3.0.32_兼容安卓4.apk** | `2026-02-27` | V3版本兼容安卓4.4以下，家里电视或盒子是比较老的版本的系统可以安装 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/影视/影视仓/影视仓V3稳定版-3.0.32_兼容安卓4.apk) |
+| **影视仓V3稳定版-3.0.36_兼容安卓4.apk** | `2026-02-27` | V3版本兼容安卓4.4以下，家里电视或盒子是比较老的版本的系统可以安装 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/影视/影视仓/影视仓V3稳定版-3.0.36_兼容安卓4.apk) |
+| **影视仓_3.2.6.apk** | `2026-02-27` | 安卓6.0及以上，不支持纯血鸿蒙，需设置接口源，本仓库下方有分享。[其他版本下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/影视/影视仓) | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/影视/影视仓/影视仓_3.2.6.apk) |
+| **影视仓_3.2.7.1.apk** | `2026-02-27` | 安卓6.0及以上，不支持纯血鸿蒙，需设置接口源，本仓库下方有分享。[其他版本下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/影视/影视仓) | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/影视/影视仓/影视仓_3.2.7.1.apk) |
+| **影视仓_5.0.40.1.apk** | `2026-02-27` | 安卓6.0及以上，不支持纯血鸿蒙，需设置接口源，本仓库下方有分享。[其他版本下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/影视/影视仓) | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/影视/影视仓/影视仓_5.0.40.1.apk) |
+| **月光宝盒Box0415.apk** | `2026-02-27` | 单仓版本，内置数据源，全接口AI过滤广告 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/影视/月光宝盒/月光宝盒Box0415.apk) |
+| **月光宝盒Box0507.apk** | `2026-02-27` | 单仓版本，内置数据源，全接口AI过滤广告 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/影视/月光宝盒/月光宝盒Box0507.apk) |
+| **月光宝盒Box0601.apk** | `2026-02-27` | 单仓版本，内置数据源，全接口AI过滤广告 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/影视/月光宝盒/月光宝盒Box0601.apk) |
+| **月光宝盒Box0707.apk** | `2026-02-27` | 单仓版本，内置数据源，全接口AI过滤广告 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/影视/月光宝盒/月光宝盒Box0707.apk) |
+| **月光宝盒Box1017.apk** | `2026-02-27` | 单仓版本，内置数据源，全接口AI过滤广告 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/影视/月光宝盒/月光宝盒Box1017.apk) |
+| **月光宝盒Box325.apk** | `2026-02-27` | 单仓版本，内置数据源，全接口AI过滤广告 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/影视/月光宝盒/月光宝盒Box325.apk) |
+| **月光宝盒Box32位通用版.apk** | `2026-02-27` | 单仓版本，内置数据源，全接口AI过滤广告 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/影视/月光宝盒/月光宝盒Box32位通用版.apk) |
+| **月光宝盒Box64位高版本TV.apk** | `2026-02-27` | 单仓版本，内置数据源，全接口AI过滤广告 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/影视/月光宝盒/月光宝盒Box64位高版本TV.apk) |
+| **月光宝盒Max0119.apk** | `2026-02-27` | MAX版是多仓线路源的，默认是宝盒的站源，可以进入设置更换 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/影视/月光宝盒/月光宝盒Max0119.apk) |
+| **月光宝盒Max0309.apk** | `2026-02-27` | MAX版是多仓线路源的，默认是宝盒的站源，可以进入设置更换 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/影视/月光宝盒/月光宝盒Max0309.apk) |
+| **月光宝盒Max0601.apk** | `2026-02-27` | MAX版是多仓线路源的，默认是宝盒的站源，可以进入设置更换 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/影视/月光宝盒/月光宝盒Max0601.apk) |
+| **月光宝盒Max0808.apk** | `2026-02-27` | MAX版是多仓线路源的，默认是宝盒的站源，可以进入设置更换 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/影视/月光宝盒/月光宝盒Max0808.apk) |
+| **月光宝盒Max1017.apk** | `2026-02-27` | MAX版是多仓线路源的，默认是宝盒的站源，可以进入设置更换 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/影视/月光宝盒/月光宝盒Max1017.apk) |
+| **月光宝盒PLUS0309.apk** | `2026-02-27` | PLUS版本功能较全，支持点播+直播，内置宝盒没宝数据源 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/影视/月光宝盒/月光宝盒PLUS0309.apk) |
+| **月光宝盒PLUS0516.apk** | `2026-02-27` | PLUS版本功能较全，支持点播+直播，内置宝盒没宝数据源 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/影视/月光宝盒/月光宝盒PLUS0516.apk) |
+| **月光宝盒PLUS0601.apk** | `2026-02-27` | PLUS版本功能较全，支持点播+直播，内置宝盒没宝数据源 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/影视/月光宝盒/月光宝盒PLUS0601.apk) |
+| **FM影视TV端_v5.1.8_32位_内植共存版.apk** | `2026-02-27` | 暂无详细描述 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/影视/FongMi影视/内置共存版/FM影视TV端_v5.1.8_32位_内植共存版.apk) |
+| **FM影视TV端_v5.1.8_64位_内植共存版.apk** | `2026-02-27` | 暂无详细描述 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/影视/FongMi影视/内置共存版/FM影视TV端_v5.1.8_64位_内植共存版.apk) |
+| **FM影视手机端_v5.1.8_32位_内植共存版.apk** | `2026-02-27` | 暂无详细描述 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/影视/FongMi影视/内置共存版/FM影视手机端_v5.1.8_32位_内植共存版.apk) |
+| **HTV-v4.8.0.apk** | `2026-02-27` | 暂无详细描述 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/电视直播/HTV-v4.8.0.apk) |
+| **OurTV_3.1.1_android_tv.apk** | `2026-02-27` | 暂无详细描述 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/电视直播/OurTV_3.1.1_android_tv.apk) |
+| **OurTV_3.9.1_android_tv.apk** | `2026-02-27` | 暂无详细描述 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/电视直播/OurTV_3.9.1_android_tv.apk) |
+| **Simple Live1.6.4-TV版64位.apk** | `2026-02-27` | 暂无详细描述 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/电视直播/SimpleLive/TV版1.6.4/Simple%20Live1.6.4-TV版64位.apk) |
+| **SimpleLive1.6.4-TV版32位.apk** | `2026-02-27` | 暂无详细描述 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/电视直播/SimpleLive/TV版1.6.4/SimpleLive1.6.4-TV版32位.apk) |
+| **SimpleLive1.9.8-手机版32位.apk** | `2026-02-27` | 暂无详细描述 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/电视直播/SimpleLive/手机版1.9.8/SimpleLive1.9.8-手机版32位.apk) |
+| **SimpleLive1.9.8-手机版64位.apk** | `2026-02-27` | 暂无详细描述 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/电视直播/SimpleLive/手机版1.9.8/SimpleLive1.9.8-手机版64位.apk) |
+| **WebViewTV_2.0.4.apk** | `2026-02-27` | 直接使用官网直播链接，非常稳定可靠，稳定版下载v2.0.4，尝鲜版下载v2.1.1 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/电视直播/WebViewTV/WebViewTV_2.0.4.apk) |
+| **WebViewTV_2.1.1.apk** | `2026-02-27` | 直接使用官网直播链接，非常稳定可靠，稳定版下载v2.0.4，尝鲜版下载v2.1.1 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/电视直播/WebViewTV/WebViewTV_2.1.1.apk) |
+| **app_webview_release_v1.0.6.5_20260224_0744_all.apk** | `2026-02-27` | 暂无详细描述 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/电视直播/app_webview_release_v1.0.6.5_20260224_0744_all.apk) |
+| **my-tv-0_1.3.9.8.apk** | `2026-02-27` | 暂无详细描述 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/电视直播/my-tv-0_1.3.9.8.apk) |
+| **mytv-android-tv-1.3.0.172-all-sdk21-伪装版.apk** | `2026-02-27` | 暂无详细描述 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/电视直播/mytv-android/mytv-android-tv-1.3.0.172-all-sdk21-伪装版.apk) |
+| **mytv-android-tv-1.3.0.172-all-sdk21-正常版.apk** | `2026-02-27` | 暂无详细描述 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/电视直播/mytv-android/mytv-android-tv-1.3.0.172-all-sdk21-正常版.apk) |
+| **ourTV_3.9.5.apk** | `2026-02-27` | 暂无详细描述 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/电视直播/ourTV_3.9.5.apk) |
+| **xiaofeitv-2.9.0.apk** | `2026-02-27` | 暂无详细描述 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/电视直播/xiaofeitv-2.9.0.apk) |
+| **zbds_v20260208_优化版.apk** | `2026-02-27` | 暂无详细描述 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/电视直播/zbds_v20260208_优化版.apk) |
+| **zbds_v20260208_稳定版.apk** | `2026-02-27` | 暂无详细描述 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/电视直播/zbds_v20260208_稳定版.apk) |
+| **七星电视2.0.apk** | `2026-02-27` | 内置央网源。软件没有什乱七八糟的东西，就是卫.央.当地，主打的就是一个稳 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/电视直播/七星电视2.0.apk) |
+| **全网通电视(安卓4)1.0.apk** | `2026-02-27` | 支持安卓4，部分频道需要扫描开发者的小程序获取密码，切勿付费！ | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/电视直播/全网通电视(安卓4)1.0.apk) |
+| **千寻TV_1.1.2.apk** | `2026-02-27` | 暂无详细描述 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/电视直播/千寻TV_1.1.2.apk) |
+| **千寻直播_1.1.0[支持语音换台].apk** | `2026-02-27` | 这又是一款免费的电视直播App，支持央视、卫视、各地方电视台。**支持语音换台**。 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/电视直播/千寻直播_1.1.0[支持语音换台].apk) |
+| **宽带直播_1.0.18.apk** | `2026-02-27` | 大屏直播，简约稳定 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/电视直播/宽带直播_1.0.18.apk) |
+| **宽带直播_v1.0.15版.apk** | `2026-02-27` | 大屏直播，简约稳定 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/电视直播/宽带直播_v1.0.15版.apk) |
+| **悠悠电视_1.0.3.apk** | `2026-02-27` | 无需登录，打开即可收看各个频道，并且播放流畅，显示画面清晰无卡顿 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/电视直播/悠悠电视_1.0.3.apk) |
+| **星火直播v1.0.50.apk** | `2026-02-27` | 完全免费，无需登录、无需授权，无任何广告弹窗，最大限度的简化页面结构，呈现给您最直观、最纯粹的电视节目。去广告去启动购物台版，5000+频道 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/电视直播/星火直播v1.0.50.apk) |
+| **电视家TV+5.0+稳定秒播版+稀缺.apk** | `2026-02-27` | 暂无详细描述 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/电视直播/电视家TV+5.0+稳定秒播版+稀缺.apk) |
+| **1.9.5-安卓_手机All.apk** | `2026-02-27` | 暂无详细描述 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/电视直播/纯粹直播/1.9.5-安卓_手机All.apk) |
+| **1.9.5-安卓_手机低版本.apk** | `2026-02-27` | 暂无详细描述 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/电视直播/纯粹直播/1.9.5-安卓_手机低版本.apk) |
+| **1.9.5-安卓_手机高版本.apk** | `2026-02-27` | 暂无详细描述 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/电视直播/纯粹直播/1.9.5-安卓_手机高版本.apk) |
+| **1.9.5-电视版本All.apk** | `2026-02-27` | 暂无详细描述 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/电视直播/纯粹直播/1.9.5-电视版本All.apk) |
+| **酷9_1.6.5.4-内置版.apk** | `2026-02-27` | 暂无详细描述 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/电视直播/酷9直播/内置版/酷9_1.6.5.4-内置版.apk) |
+| **酷9内置版1.7.2.3需要先卸载再重装，不然会闪退.apk** | `2026-02-27` | 暂无详细描述 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/电视直播/酷9直播/内置版/酷9内置版1.7.2.3需要先卸载再重装，不然会闪退.apk) |
+| **酷9内置版兼容安卓4.3_1.7.2.3需要先卸载再重装，不然会闪退.apk** | `2026-02-27` | 暂无详细描述 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/电视直播/酷9直播/内置版/酷9内置版兼容安卓4.3_1.7.2.3需要先卸载再重装，不然会闪退.apk) |
+| **酷9_v1.7.7.1手机版.apk** | `2026-02-27` | 暂无详细描述 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/电视直播/酷9直播/酷9_v1.7.7.1手机版.apk) |
+| **酷9_v1.7.7.1电视版.apk** | `2026-02-27` | 暂无详细描述 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/电视直播/酷9直播/酷9_v1.7.7.1电视版.apk) |
+| **酷9_v1.7.7.1通用版.apk** | `2026-02-27` | 暂无详细描述 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/电视直播/酷9直播/酷9_v1.7.7.1通用版.apk) |
+| **酷9lite空壳_1.7.6.8（兼容安卓4.3-6）.apk** | `2026-02-27` | 暂无详细描述 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/电视直播/酷9直播/酷9lite空壳_1.7.6.8（兼容安卓4.3-6）.apk) |
+| **酷9空壳_1.7.6.8（32位，兼容安卓5-10）.apk** | `2026-02-27` | 暂无详细描述 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/电视直播/酷9直播/酷9空壳_1.7.6.8（32位，兼容安卓5-10）.apk) |
+| **酷9空壳_1.7.6.8（64位，兼容安卓5-10）.apk** | `2026-02-27` | 暂无详细描述 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/电视直播/酷9直播/酷9空壳_1.7.6.8（64位，兼容安卓5-10）.apk) |
+| **CIBN糖豆v3.2.0-糖豆TV版-会员版_LWELY.apk** | `2026-02-27` | 暂无详细描述 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/运动健身/CIBN糖豆v3.2.0-糖豆TV版-会员版_LWELY.apk) |
+| **CIBN糖豆v3.2.0-糖豆TV版-会员版_teyond.apk** | `2026-02-27` | 暂无详细描述 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/运动健身/CIBN糖豆v3.2.0-糖豆TV版-会员版_teyond.apk) |
+| **Daily_Yoga_5.4.5.apk** | `2026-02-27` | 暂无详细描述 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/运动健身/Daily_Yoga_5.4.5.apk) |
+| **Fittime_TV_2.7.3.8.apk** | `2026-02-27` | 暂无详细描述 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/运动健身/Fittime_TV_2.7.3.8.apk) |
+| **KeepTV珍藏版3.1.0.apk** | `2026-02-27` | 暂无详细描述 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/运动健身/KeepTV珍藏版3.1.0.apk) |
+| **Keep_TV_v3.3.0.apk** | `2026-02-27` | 暂无详细描述 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/运动健身/Keep_TV_v3.3.0.apk) |
+| **七星智教_v2.5_陪伴孩子成长的APP.apk** | `2026-02-27` | 集教育与娱乐于一体海量教育资源，专为儿童教育设计，全新的资源接口 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/教育学习/七星智教_v2.5_陪伴孩子成长的APP.apk) |
+| **七星智教_v3.0(陪伴孩子成长的APP)不支持安卓4.apk** | `2026-02-27` | 集教育与娱乐于一体海量教育资源，专为儿童教育设计，全新的资源接口 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/教育学习/七星智教_v3.0(陪伴孩子成长的APP)不支持安卓4.apk) |
+| **儿歌多多TV-v1.3.0.0无限制版.apk** | `2026-02-27` | 无限制版 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/教育学习/儿歌多多TV-v1.3.0.0无限制版.apk) |
+| **儿歌多多TV_1.3.1.0无限制版.apk** | `2026-02-27` | 无限制版 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/教育学习/儿歌多多TV_1.3.1.0无限制版.apk) |
+| **宝宝趣学_v2.0.0.apk** | `2026-02-27` | 纯净无限制的TV应用，包含了儿童和家长双模式资源 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/教育学习/宝宝趣学_v2.0.0.apk) |
+| **宝宝趣学_v3.0.1.apk** | `2026-02-27` | 纯净无限制的TV应用，包含了儿童和家长双模式资源 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/教育学习/宝宝趣学_v3.0.1.apk) |
+| **淘知学堂TV已解锁会员.apk** | `2026-02-27` | 本软件适合学生或家中有学生的安装，解锁高级特权，所有内容无限制播放，足不出户在家就能随时 随地高效学习。 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/教育学习/淘知学堂TV已解锁会员.apk) |
+| **4K梨园戏TV高级版1.0.2.apk** | `2026-02-27` | 暂无详细描述 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/娱乐应用/4K梨园戏TV高级版1.0.2.apk) |
+| **BBLL5改1.5.2.apk** | `2026-02-27` | 暂无详细描述 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/娱乐应用/BBLL5改1.5.2.apk) |
+| **BV_853_0.3.13.r853.21bb2de3.apk** | `2026-02-27` | 哔哩哔哩TV第三方版，国内免翻可用，拒绝神秘力量 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/娱乐应用/BV_853_0.3.13.r853.21bb2de3.apk) |
+| **BiliTV-1.2.1.apk** | `2026-02-27` | 又一款第三方哔哩哔哩客户端。 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/娱乐应用/BiliTV-1.2.1.apk) |
+| **TG音乐台-TV7.0本地版-游魂网络.apk** | `2026-02-27` | TVBox壳本地版内置10万+音乐/MV资源 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/娱乐应用/TG音乐台-TV7.0本地版-游魂网络.apk) |
+| **七星戏曲1.0.apk** | `2026-02-27` | 熟悉的box应用风格，七星影城天哥的作品。真·免费无套路！不用充会员，不用看广告，点开就能看全场！ | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/娱乐应用/七星戏曲1.0.apk) |
+| **云视听快TV_3.9.1.apk** | `2026-02-27` | 快手的TV版，去除更新升级无付费内容的老版本，对比新版只是删除了几个付费的栏目！ | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/娱乐应用/云视听快TV_3.9.1.apk) |
+| **哔哩哔哩_1.6.6_v10修复版.apk** | `2026-02-27` | 暂无详细描述 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/娱乐应用/哔哩哔哩_1.6.6_v10修复版.apk) |
+| **哔哩哔哩_1.6.6_v11正式版.apk** | `2026-02-27` | 暂无详细描述 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/娱乐应用/哔哩哔哩_1.6.6_v11正式版.apk) |
+| **囧次元 Ver.1.5.8.0 去广告v8版.apk** | `2026-02-27` | 新版冏次元，支持安卓+TV双端，涵盖了日漫、国漫、剧场等类型。已解锁，TV 版需要切换为账号登录，无需输入任何内容，直接点击登录即可。 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/娱乐应用/囧次元%20Ver.1.5.8.0%20去广告v8版.apk) |
+| **囧次元TV_1.0.0.0.apk** | `2026-02-27` | 新版冏次元，支持安卓+TV双端，涵盖了日漫、国漫、剧场等类型。已解锁，TV 版需要切换为账号登录，无需输入任何内容，直接点击登录即可。 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/娱乐应用/囧次元TV_1.0.0.0.apk) |
+| **小鸡模拟器TV版v1.1.8永久去升级.apk** | `2026-02-27` | 永久去升级，专为TV电视机设计，支持上万款经典游戏，亲测可运行；超级玛丽、拳皇97、怪物猎人、口袋妖怪……你的童年回忆全在这里。**目前无法下载新游戏** | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/娱乐应用/小鸡模拟器TV版v1.1.8永久去升级.apk) |
+| **戏曲多多.apk** | `2026-02-27` | 戏曲多多TV版是一款中老年人娱乐软件。为广大喜爱戏曲的朋友们提供戏曲评书大全、京剧相声小说二人转、经典老电影、热门广场舞等休闲娱乐功能！ | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/娱乐应用/戏曲多多.apk) |
+| **戏曲多多TV_老版本免费版.apk** | `2026-02-27` | 戏曲多多TV版是一款中老年人娱乐软件。为广大喜爱戏曲的朋友们提供戏曲评书大全、京剧相声小说二人转、经典老电影、热门广场舞等休闲娱乐功能！ | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/娱乐应用/戏曲多多TV_老版本免费版.apk) |
+| **茉莉音乐1.0.1高级版.apk** | `2026-02-27` | 高级版，全网音乐免费听与下载 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/娱乐应用/茉莉音乐1.0.1高级版.apk) |
+| **茉莉音乐1.0.2.apk** | `2026-02-27` | 高级版，全网音乐免费听与下载 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/娱乐应用/茉莉音乐1.0.2.apk) |
+| **茱元游戏TV-2.9.3.apk** | `2026-02-27` | 支持搜索想玩的游戏，下载速度极快，连接手柄就可以轻松畅玩，万款海量游戏终身永久免费玩，让你瞬间回到街机时代的欢乐时光。 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/娱乐应用/茱元游戏TV-2.9.3.apk) |
+| **酷咖游戏.apk** | `2026-02-27` | 一款支持联机的街机游戏、FC游戏、MD游戏以及SFC游戏等众多经典游戏，涵盖了射击类、格斗类、动作类、策略类、赛车类、体育类、益智类和角色扮演等八种游戏类型。 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/娱乐应用/酷咖游戏.apk) |
+| **音悦2.4.0.apk** | `2026-02-27` | 音乐播放器、无损音乐下载工具，支持自定义音乐源 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/娱乐应用/音悦2.4.0.apk) |
+| **魔音MORIN-3.7.0去广告激活版.apk** | `2026-02-27` | 音乐播放器、无损音乐下载工具，去广告解锁VIP会员精简版 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/娱乐应用/魔音MORIN-3.7.0去广告激活版.apk) |
+| **MXPlayer-1.94.0-v8a-CN-Mod.apk** | `2026-02-27` | 暂无详细描述 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/MXPlayer-1.94.0-v8a-CN-Mod.apk) |
+| **MXPlayer-Pro-1.86.0-v7a-Mod-Balatan.apk** | `2026-02-27` | 暂无详细描述 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/MXPlayer-Pro-1.86.0-v7a-Mod-Balatan.apk) |
+| **MX_Player_1.78.6.apk** | `2026-02-27` | 暂无详细描述 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/MX_Player_1.78.6.apk) |
+| **ES文件浏览器4.4.3.5会员版-辰夕.apk** | `2026-02-27` | 解锁所有付费VIP会员特权、免广告，登录既是永久 VIP | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/实用工具/ES文件浏览器4.4.3.5会员版-辰夕.apk) |
+| **MT管理器2.18.4.apk** | `2026-02-27` | 暂无详细描述 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/实用工具/MT管理器2.18.4.apk) |
+| **NP管理器-3.1.21.apk** | `2026-02-27` | 暂无详细描述 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/实用工具/NP管理器-3.1.21.apk) |
+| **应用管家v1.8.2-公签版.apk** | `2026-02-27` | 可以管理电视应用、文件，还能提取电视应用，当然也能传送应用到电视进行安装。支持TV、车机、android 4.3以上 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/实用工具/应用管家v1.8.2-公签版.apk) |
+| **应用管家v1.8.2-普通版.apk** | `2026-02-27` | 可以管理电视应用、文件，还能提取电视应用，当然也能传送应用到电视进行安装。支持TV、车机、android 4.3以上 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/实用工具/应用管家v1.8.2-普通版.apk) |
+| **野草助手-TV版-v2.0.8.apk** | `2026-02-27` | 野草助手APP一款可以方便用户快捷的在电视端安装应用的应用工具，口令、远程安装等多种途径可以快速辅助大家安装应用。 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/实用工具/野草助手-TV版-v2.0.8.apk) |
+| **TVBox_q215613905_20251016-2311-java.apk** | `2026-02-27` | 空盒原版，分为白壳和黑壳版，具体进文件夹查看版本说明，需配置接口源 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/TVBox/TVBox_q215613905_20251016-2311-java.apk) |
+| **TVBox_q215613905_20251016-2311-python.apk** | `2026-02-27` | 空盒原版，分为白壳和黑壳版，具体进文件夹查看版本说明，需配置接口源 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/TVBox/TVBox_q215613905_20251016-2311-python.apk) |
+| **IKTV-80.3.0-电视免费k歌.apk** | `2026-02-27` | 最新修复版可用了，切勿更新！如果弹出激活不去管他过几天就又可以用了。 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/K歌/IKTV-80.3.0-电视免费k歌.apk) |
+| **全民K歌(MV版)v5.9.0.1(免登录版).apk** | `2026-02-27` | 全民K歌2026TV电视版-官方遗留版本修复-无广告免会员无限制版 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/K歌/全民K歌(MV版)v5.9.0.1(免登录版).apk) |
+| **全民K歌TV_MV版_9.8.7.1免费K歌神器.apk** | `2026-02-27` | 暂无详细描述 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/K歌/全民K歌TV_MV版_9.8.7.1免费K歌神器.apk) |
+| **全民K歌_5.9.8.1(VIP).apk** | `2026-02-27` | 暂无详细描述 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/K歌/全民K歌_5.9.8.1(VIP).apk) |
+| **和音元3.22版本.apk** | `2026-02-27` | 暂无详细描述 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/K歌/和音元3.22版本.apk) |
+| **咪咕爱唱_4.10.001_VIP版.apk** | `2026-02-27` | VIP版，登录即是连续包月会员 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/K歌/咪咕爱唱_4.10.001_VIP版.apk) |
+| **咪咕爱唱_9.9.012.apk** | `2026-02-27` | VIP版，登录即是连续包月会员 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/K歌/咪咕爱唱_9.9.012.apk) |
+| **嗨库KTV-3.15.64永久激活手机点歌K歌.apk** | `2026-02-27` | 同上都是一个类型的软件，注意如果有让你更新付费切勿相信！ | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/K歌/嗨库KTV-3.15.64永久激活手机点歌K歌.apk) |
+| **家庭KTV_1_15_去更新_保留手机点歌.apk** | `2026-02-27` | 部分机型扫码点歌提示软件未启动 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/K歌/家庭KTV_1_15_去更新_保留手机点歌.apk) |
+| **家庭ktv1.1.6_最新版.apk** | `2026-02-27` | 暂无详细描述 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/K歌/家庭ktv1.1.6_最新版.apk) |
+| **想唱就唱_2.15.63会员版v2.apk** | `2026-02-27` | 暂无详细描述 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/K歌/想唱就唱_2.15.63会员版v2.apk) |
+| **想唱就唱修复版v2.15.63.apk** | `2026-02-27` | 手机/TV通用，解锁会员版、支持扫码点歌，汇集70w+首歌曲，可在线更新曲库，全是 HD 高画质，支持语音助手 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/K歌/想唱就唱修复版v2.15.63.apk) |
+| **智享K歌_2.16.58.2411111420.apk** | `2026-02-27` | 手机/TV通用，解锁会员版、支持扫码点歌，汇集70w+首歌曲，可在线更新曲库，全是 HD 高画质，支持语音助手 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/K歌/智享K歌_2.16.58.2411111420.apk) |
+| **智能Ktv歌_TV版v2.17_支持扫码点歌.apk** | `2026-02-27` | 暂无详细描述 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/K歌/智能Ktv歌_TV版v2.17_支持扫码点歌.apk) |
+| **智能K歌-v2.16.58解锁VIP版.apk** | `2026-02-27` | 暂无详细描述 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/K歌/智能K歌-v2.16.58解锁VIP版.apk) |
+| **智能K歌250523.apk** | `2026-02-27` | 暂无详细描述 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/K歌/智能K歌250523.apk) |
+| **智能K歌TV可扫码点歌.apk** | `2026-02-27` | 暂无详细描述 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/K歌/智能K歌TV可扫码点歌.apk) |
+| **智能K歌_2.17.48.2505081546_V2修复版.apk** | `2026-02-27` | 暂无详细描述 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/K歌/智能K歌_2.17.48.2505081546_V2修复版.apk) |
+| **智能K歌_2.18.10.2509231747.apk** | `2026-02-27` | 暂无详细描述 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/K歌/智能K歌_2.18.10.2509231747.apk) |
+| **智能K歌修复乱点歌2.17.48.2505081546.apk** | `2026-02-27` | 暂无详细描述 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/K歌/智能K歌修复乱点歌2.17.48.2505081546.apk) |
+| **爱唱KTV-v2.16.58会员版.apk** | `2026-02-27` | 暂无详细描述 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/K歌/爱唱KTV-v2.16.58会员版.apk) |
+| **蓝调KTV_3.26.74.apk** | `2026-02-27` | 同上都是一个类型的软件，注意如果有让你更新付费切勿相信！ | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/K歌/蓝调KTV_3.26.74.apk) |
+| **蓝音_2.15.68.2401261132.apk** | `2026-02-27` | 手机/TV通用，解锁会员版、支持扫码点歌，汇集70w+首歌曲，可在线更新曲库，全是 HD 高画质，支持语音助手 | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/K歌/蓝音_2.15.68.2401261132.apk) |
+| **隆庭KTV3.15.53.2312271744.apk** | `2026-02-27` | 同上都是一个类型的软件，注意如果有让你更新付费切勿相信！ | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/K歌/隆庭KTV3.15.53.2312271744.apk) |
+| **随畅KTV_v3.24.09.03-会员.apk** | `2026-02-27` | 同上都是一个类型的软件，注意如果有让你更新付费切勿相信！ | [📥 下载](https://raw.githubusercontent.com/sowahsun/N9G9/main/K歌/随畅KTV_v3.24.09.03-会员.apk) |
 
-## 一览表 📂
-
-| APP名称                 | 版本        | 下载地址                                                     | 状态 | 备注                                                         |
-| ----------------------- | ----------- | ------------------------------------------------------------ | ---- | ------------------------------------------------------------ |
-| TVBox                   | 20260227 | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/TVBox) | 🟢    | 空盒原版，分为白壳和黑壳版，具体进文件夹查看版本说明，需配置接口源 |
-| 影视仓                  | v6.1.9    | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/影视/影视仓/影视仓_6.1.9_opt_sign.apk) | 🟢    | 安卓6.0及以上，不支持纯血鸿蒙，需设置接口源，本仓库下方有分享。[其他版本下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/影视/影视仓) |
-| 影视仓V3                | v3.0.36     | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/影视/影视仓/影视仓V3稳定版-3.0.36_兼容安卓4.apk) | 🟢    | V3版本兼容安卓4.4以下，家里电视或盒子是比较老的版本的系统可以安装 |
-| 月光宝盒Box             | 20251017    | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/影视/月光宝盒/月光宝盒Box1017.apk) | 🟢    | 单仓版本，内置数据源，全接口AI过滤广告                       |
-| 月光宝盒Max             | 20260119 | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/影视/月光宝盒/月光宝盒Max0119.apk) | 🟢    | MAX版是多仓线路源的，默认是宝盒的站源，可以进入设置更换      |
-| 月光宝盒PLUS            | 20250601    | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/影视/月光宝盒/月光宝盒PLUS0601.apk) | 🟢    | PLUS版本功能较全，支持点播+直播，内置宝盒没宝数据源          |
-| 宝盒TV                  | v3.7.3 | [下载](/影视/宝盒TV/README.md) | 🟢    | 基于OK影视二开的内置源影视TV                                 |
-| FongMi影视              | v5.2.6 | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/影视/FongMi影视) | 🟢    | 蜂蜜影视，请对照文件夹里版本说明下载                         |
-| OK影视                  | v3.7.3 | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/影视/OK影视/OK影视-电视版-3.7.3.apk) | 🟢    | 标准版 [安卓5专版下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/影视/OK影视/安卓5专版) |
-| OK影视Pro               | v5.0.5 | [下载](/影视/OK影视/README.md) | 🟢    | 多了在线字幕/弹幕搜索、VLC（电视版）、MPV（手机版），以上功能都需要在Pro版的设置点击关于激活看广告激活Pro功能，介意请用标准版 |
-| 欧歌影视                | v6.1.7      | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/影视/欧617.apk) | 🟢    | 集成多种影视资源的免费电视软件，基于影视仓魔改，内置欧歌源，安装即用 |
-| 欧歌影视魔改            | v6.1.7      | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/影视/魔617.apk) | 🟢    | 集成多种影视资源的免费电视软件，基于影视仓魔改，内置欧歌源，安装即用 |
-| 七星影仓                | v6.1.7      | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/影视/七星影仓6.1.7-251103修复版(点配置点确定).apk) | 🟢    | 天微大佬基于影视仓内置接口源，内置点配置点确定               |
-| 七星影仓V3              | v3.0.35     | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/影视/七星影仓-V3版-安卓4.x系统专用(点配置点确定).apk) | 🟢    | 天微大佬基于影视仓V3稳定版内置接口源，内置点配置点确定。兼容安卓4.4以下 |
-| 小苹果影视              | v1.6.2     | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/影视/小苹果影视盒子-release-1.6.2.apk) | 🟢    | 内置上百线路资源。免输入接口，安装即用                       |
-| 及时雨影视 | v1.0.8 | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/影视/JSYBOX-release1.0.8.apk) | 🟢 | 同小苹果TV作者，在其基础上新增缓存下载功能，对各种源的资源能播即能缓存下载 |
-| 好好看TV版              | v1.1.2      | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/影视/好好看_TV_1.1.2.apk) | 🟢    | 网飞猫同一系列，纯净无广告。汇集了Netflix、电影、短剧、剧集、动漫、综艺等资源，各大平台资源同步更新，内置多条超清、蓝光、优质等线路，支持投屏、影评等功能 |
-| 小猫影视                | v2.6.0-1    | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/影视/小猫影视) | 🟢    | 小猫影视是一款全平台(Android、Windows、Macos、iOS、Linux)的影视播放器, 支持 VOD/JS 扩展源。 |
-| Kodi | v22.0 | [下载](https://mirrors.aliyun.com/xbmc/snapshots/android/arm/kodi-22.0-Piers_alpha2-armeabi-v7a.apk) | 🟢 | Kodi是一款专业的多媒体影音播放器，可播放本地存储、网络共享及流媒体内容。 [kodi教程](/wiki/kodi.md) |
-| XMBOX | v3.1.3 | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/影视/XMBOX) | 🟢 | 一个操作方便、界面简洁的Android视频播放器盒子，需自行添源，支持TV和手机双平台。 |
-| 全民K歌(MV版)           | v9.8.7.1  | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/K歌/全民K歌TV_MV版_9.8.7.1免费K歌神器) | 🟢    | 全民K歌2026TV电视版-官方遗留版本修复-无广告免会员无限制版        |
-| 咪咕爱唱                | v9.9.012    | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/K歌/咪咕爱唱_9.9.012.apk) | 🟢    | VIP版，登录即是连续包月会员                                  |
-| 家庭KTV                 | v1.16       | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/K歌/家庭ktv1.1.6_最新版.apk) | 🟢    | 部分机型扫码点歌提示软件未启动                               |
-| 想唱就唱修复版          | v2.15.63    | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/K%E6%AD%8C/%E6%83%B3%E5%94%B1%E5%B0%B1%E5%94%B1%E4%BF%AE%E5%A4%8D%E7%89%88v2.15.63.apk) | 🟢    | 手机/TV通用，解锁会员版、支持扫码点歌，汇集70w+首歌曲，可在线更新曲库，全是 HD 高画质，支持语音助手 |
-| 金音KTV·金尊专享会员版  | v3.15.64 | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/K歌/金音) | 🟢    | 手机/TV通用，解锁会员版、支持扫码点歌，汇集70w+首歌曲，可在线更新曲库，全是 HD 高画质，支持语音助手 |
-| 爱唱KTV会员版           | v2.16.58    | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/K歌/爱唱KTV-v2.16.58会员版.apk) | 🟢    | 手机/TV通用，解锁会员版、支持扫码点歌，汇集70w+首歌曲，可在线更新曲库，全是 HD 高画质，支持语音助手 |
-| 智能K歌解锁VIP版        | v2.17.48 | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/K歌/智能K歌_2.17.48.2505081546_V2修复版.apk) | 🟢    | 手机/TV通用，解锁会员版、支持扫码点歌，汇集70w+首歌曲，可在线更新曲库，全是 HD 高画质，支持语音助手 |
-| 智享K歌                 | v2.16.58    | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/K歌/智享K歌_2.16.58.2411111420.apk) | 🟢    | 手机/TV通用，解锁会员版、支持扫码点歌，汇集70w+首歌曲，可在线更新曲库，全是 HD 高画质，支持语音助手 |
-| 蓝音                    | v2.15.68    | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/K歌/蓝音_2.15.68.2401261132.apk) | 🟢    | 手机/TV通用，解锁会员版、支持扫码点歌，汇集70w+首歌曲，可在线更新曲库，全是 HD 高画质，支持语音助手 |
-| 随畅KTV                 | v3.24.09.03 | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/K歌/随畅KTV_v3.24.09.03-会员.apk) | 🟢    | 同上都是一个类型的软件，注意如果有让你更新付费切勿相信！     |
-| 蓝调KTV                 | v3.26.74    | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/K歌/蓝调KTV_3.26.74.apk) | 🟢    | 同上都是一个类型的软件，注意如果有让你更新付费切勿相信！     |
-| 嗨库KTV | v3.15.64 | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/K歌/嗨库KTV-3.15.64永久激活手机点歌K歌.apk) | 🟢 | 同上都是一个类型的软件，注意如果有让你更新付费切勿相信！ |
-| 隆庭KTV | v3.15.53 | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/K歌/隆庭KTV3.15.53.2312271744.apk) | 🟢 | 同上都是一个类型的软件，注意如果有让你更新付费切勿相信！ |
-| 我的电视                | v1.3.9.8    | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/电视直播/my-tv-0_1.3.9.8.apk) | 🟢    | 无广无购物的电视直播，央视、卫视、地方频道，带直播源库       |
-| OurTV(我们的电视)       | v3.9.5      | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/电视直播/ourTV_3.9.5.apk) | 🔴    | **开发者收到制裁，已停止转播电视信号**                       |
-| 酷9直播                 | v1.7.7.1  | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/电视直播/酷9直播) | 🟢    | 免费的TV端电视直播软件，首次打开是空壳，依次打开**列表设置-列表订阅**，然后**点击直播源并重启**即可，播放流畅不卡顿。具体看文件夹说明 |
-| HTV直播                 | v4.8.0      | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/电视直播/HTV-v4.8.0.apk) | 🟢    | 开源版全新电视直播软件，兼容Android 4.4和IPv4，可播放rtp等各种源，**内置咪咕源** |
-| 小飞电视                | v2.9.0      | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/电视直播/xiaofeitv-2.9.0.apk) | 🟢    | 小飞电视app是一款免费用来播放高清电视的工具，可以在各种安卓电视，手机上面观看高清的电视节目，其主要为用户提供央视、卫视、各地方电视台。 |
-| 千寻直播                | v1.1.2      | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/电视直播/千寻TV_1.1.2.apk) | 🟢    | 这又是一款免费的电视直播App，支持央视、卫视、各地方电视台。**支持语音换台**。 |
-| 星火直播                | v1.0.50     | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/电视直播/星火直播v1.0.50.apk) | 🟢    | 完全免费，无需登录、无需授权，无任何广告弹窗，最大限度的简化页面结构，呈现给您最直观、最纯粹的电视节目。去广告去启动购物台版，5000+频道 |
-| WebViewTV               | v2.1.1   | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/电视直播/WebViewTV) | 🟢    | 直接使用官网直播链接，非常稳定可靠，稳定版下载v2.0.4，尝鲜版下载v2.1.1 |
-| 七星电视                | 251209      | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/电视直播/七星电视2.0.apk) | 🟢    | 内置央网源。软件没有什乱七八糟的东西，就是卫.央.当地，主打的就是一个稳 |
-| 悠悠电视                | v1.0.3      | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/电视直播/悠悠电视_1.0.3.apk) | 🟢    | 无需登录，打开即可收看各个频道，并且播放流畅，显示画面清晰无卡顿 |
-| 电视直播                | v1.3.0.172  | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/电视直播/mytv-android/mytv-android-tv-1.3.0.172-all-sdk21-正常版.apk) | 🟢    | 基于天光云影3.3.9，使用Android原生开发的电视直播软件         |
-| 电视家修复版            | v10.2.0     | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/电视直播/电视家TV+5.0+稳定秒播版+稀缺.apk) | 🔴  | 稳定秒播版+稀缺。**目前无节目**                               |
-| 全网通电视              | v1.0        | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/电视直播/全网通电视(安卓4)1.0.apk) | 🟢    | 支持安卓4，部分频道需要扫描开发者的小程序获取密码，切勿付费！ |
-| 宽带直播                | v1.0.18     | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/电视直播/宽带直播_1.0.18.apk) | 🟢    | 大屏直播，简约稳定                                           |
-| 你的电视                | v2.3.9 | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/电视直播/yourtv_v2.3.9.apk) | 🟢    | 包含网页源+IPTV源可切换。注：最新版本需要在远程配置中，找到“仅用于测试直播源”这一行右侧的新增按钮，点击新增，稍等10-30秒，等待大屏提示完成就可以了 |
-| DongYuTvWeb | v1.0.6.5 | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/电视直播/app_webview_release_v1.0.6.5_20260224_0744_all.apk) | 🟢 | webview同类型的直播应用软件，节目资源丰富，包括央视、卫视、地方台 |
-| IKTV                    | v80.3.0     | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/K歌/IKTV-80.3.0-电视免费k歌.apk) | 🟢    | 最新修复版可用了，切勿更新！如果弹出激活不去管他过几天就又可以用了。 |
-| 小鸡模拟器TV版          | v1.1.8      | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/娱乐应用/小鸡模拟器TV版v1.1.8永久去升级.apk) | 🔴    | 永久去升级，专为TV电视机设计，支持上万款经典游戏，亲测可运行；超级玛丽、拳皇97、怪物猎人、口袋妖怪……你的童年回忆全在这里。**目前无法下载新游戏** |
-| 茱元游戏TV              | v2.9.3      | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/娱乐应用/茱元游戏TV-2.9.3.apk) | 🟢    | 支持搜索想玩的游戏，下载速度极快，连接手柄就可以轻松畅玩，万款海量游戏终身永久免费玩，让你瞬间回到街机时代的欢乐时光。 |
-| 酷咖游戏                | 20250404    | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/娱乐应用/酷咖游戏.apk) | 🟢    | 一款支持联机的街机游戏、FC游戏、MD游戏以及SFC游戏等众多经典游戏，涵盖了射击类、格斗类、动作类、策略类、赛车类、体育类、益智类和角色扮演等八种游戏类型。 |
-| Keep健身TV版            | v3.3.0      | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/运动健身/Keep_TV_v3.3.0.apk) | 🟢    | 免登录永久会员版                                             |
-| 即可运动TV版            | v2.7.3.8    | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/运动健身/Fittime_TV_2.7.3.8.apk) | 🟢    | 所有视频免登陆无限制观看，解锁付费会员才能使用的高清画质。   |
-| 每日瑜伽                | v5.4.5      | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/运动健身/Daily_Yoga_5.4.5.apk) | 🟢    | 软件已解锁VIP，用微信扫码登陆（记得打勾同意服务条款），然后按返回键回到主界面即可解锁全部资源。 |
-| MX Player播放器         | v1.94.0     | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/MXPlayer-1.94.0-v8a-CN-Mod.apk) | 🟢    | 去广告、切断不必要联网请求，集成编码器版本                   |
-| MX Player播放器Pro版    | v1.86.0     | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/MXPlayer-Pro-1.86.0-v7a-Mod-Balatan.apk) | 🟢    | 解锁VIP,集成编码器版本,保留完整多国语言。专业版的更新及修正经常滞后免费版，其它播放功能在作为本地播放器使用方面并没有啥区别！ |
-| bilibiliTV版 BBLL       | v1.5.2      | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/娱乐应用/BBLL5改1.5.2.apk) | 🟢    | 哔哩哔哩TV第三方版，完美适配TV与遥控器操作，支持弹幕功能，还支持与手机端会员通用，诸如8K、4K、杜比视界等画质应有尽有 |
-| 哔哩哔哩TV版            | v1.6.6      | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/娱乐应用/哔哩哔哩_1.6.6_v11正式版.apk) | 🟢    | 哔哩哔哩TV第三方版，V11 正式版。完美解决了之前版本中无法播放和首页无法点击的问题 |
-| BV | v0.3.13 | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/娱乐应用/BV_853_0.3.13.r853.21bb2de3.apk) | 🟢 | 哔哩哔哩TV第三方版，国内免翻可用，拒绝神秘力量 |
-| BiliTV | v1.2.1 | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/娱乐应用/BiliTV-1.2.1.apk) | 🟢 | 又一款第三方哔哩哔哩客户端。 |
-| 儿歌多多TV              | v1.3.1.0    | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/教育学习/儿歌多多TV_1.3.1.0无限制版.apk) | 🟢    | 无限制版                                                     |
-| 七星智教                | v3.0        | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/教育学习/七星智教_v3.0(陪伴孩子成长的APP)不支持安卓4.apk) | 🟢    | 集教育与娱乐于一体海量教育资源，专为儿童教育设计，全新的资源接口 |
-| 宝宝趣学                | v3.0.1      | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/教育学习/宝宝趣学_v3.0.1.apk) | 🟢    | 纯净无限制的TV应用，包含了儿童和家长双模式资源               |
-| CIBN糖豆-糖豆广场舞TV版 | v3.2.0      | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/运动健身/CIBN糖豆v3.2.0-糖豆TV版-会员版_teyond.apk) | 🟢    | 解锁会员版，登录账号既是VIP                                  |
-| 野草助手                | v2.0.8      | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/实用工具/野草助手-TV版-v2.0.8.apk) | 🟢    | 野草助手APP一款可以方便用户快捷的在电视端安装应用的应用工具，口令、远程安装等多种途径可以快速辅助大家安装应用。 |
-| 纯粹直播TV              | v2.0.14 | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/电视直播/纯粹直播) | 🟢    | 专门为电视端打造，又有了全新的体验，整合了目前热门的，如B站、某鱼、虎牙、某抖等7大平台，一个app就可以看多个平台。 |
-| SimpleLiveTV            | v1.6.4    | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/电视直播/SimpleLive/TV版1.6.4/SimpleLive1.6.4-TV版32位.apk) | 🟢    | 简简单单的看直播，聚合抖音直播、斗鱼直播、虎牙直播和哔哩哔哩直播等 |
-| 动漫鸭                  | v10.1.0     | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/影视/动漫鸭_10.1.0.apk) | 🟢    | 动漫鸭是一款内置源的全新影视TV，虽然名字叫动漫鸭，但却是一款实打实的多线路源影视播放器，主要还是看内置的源，无需注册登录，无广告，无限制！ |
-| FM影视内置共存版        | v5.1.8 | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/影视/FongMi影视/内置共存版) | 🟢    | 最新内置共存版，不影响原版安装共存，内置了多仓线路，默认网盘线路支持超清4K原画等海量资源 |
-| 新五岳影视TV            | v2.3.9      | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/影视/新五岳影视TV4K.apk) | 🟢    | 免扫4K神器，目前只有TV端，可看直播，无需设置，直接使用，新老片源几乎都有，4K+蓝光任意选择，4K免扫，基本满足日常需求 |
-| OK影视内置共存版        | v3.7.3 | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/影视/OK影视/内置共存版) | 🟢    | 最新内置共存版，不影响原版安装共存，内置了多仓线路，默认网盘线路支持超清4K原画等海量资源 |
-| 直播电视                | v20260208 | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/电视直播/zbds_v20260208_稳定版.apk) | 🟢    | 手机电视通用。软件永久免费使用！普通用户默认显示365天，到期会自动续期。10000+节目源每天定时更新 |
-| 应用管家                | v1.8.2     | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/实用工具/应用管家v1.8.2-公签版.apk) | 🟢    | 可以管理电视应用、文件，还能提取电视应用，当然也能传送应用到电视进行安装。支持TV、车机、android 4.3以上 |
-| MT 管理器               | v2.18.4     | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/实用工具/MT管理器2.18.4.apk) | 🟢    | 文件管理工具和APK逆向修改神器                                |
-| NP 管理器               | v3.1.21     | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/实用工具/NP管理器-3.1.21.apk) | 🟢    | 文件管理工具和APK逆向修改神器                                |
-| 囧次元                  | v1.0.0.0    | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/娱乐应用/囧次元TV_1.0.0.0.apk) | 🟢    | 新版冏次元，支持安卓+TV双端，涵盖了日漫、国漫、剧场等类型。已解锁，TV 版需要切换为账号登录，无需输入任何内容，直接点击登录即可。 |
-| 戏曲多多                | v9.9.9 | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/娱乐应用/戏曲多多TV_老版本免费版.apk) | 🟢    | 戏曲多多TV版是一款中老年人娱乐软件。为广大喜爱戏曲的朋友们提供戏曲评书大全、京剧相声小说二人转、经典老电影、热门广场舞等休闲娱乐功能！ |
-| 梨园行戏曲              | v1.0.2      | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/娱乐应用/4K梨园戏TV高级版1.0.2.apk) | 🟢    | 4k高级版，优质的戏曲播放软件                                 |
-| 七星戏曲                | v1.0        | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/娱乐应用/七星戏曲1.0.apk) | 🟢    | 熟悉的box应用风格，七星影城天哥的作品。真·免费无套路！不用充会员，不用看广告，点开就能看全场！ |
-| 饭太硬                  | v9.9.9      | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/影视/飯太硬.apk) | 🟢    | 内置饭太硬本地源版本                                         |
-| 云视听快TV              | v3.9.1.2010 | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/娱乐应用/云视听快TV_3.9.1.apk) | 🟢    | 快手的TV版，去除更新升级无付费内容的老版本，对比新版只是删除了几个付费的栏目！ |
-| 魔音MORIN               | v3.7.0      | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/娱乐应用/魔音MORIN-3.7.0去广告激活版.apk) | 🟢    | 音乐播放器、无损音乐下载工具，去广告解锁VIP会员精简版        |
-| 音悦                    | v2.4.0      | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/娱乐应用/音悦2.4.0.apk) | 🟢    | 音乐播放器、无损音乐下载工具，支持自定义音乐源               |
-| 茉莉音乐                | v1.0.2      | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/娱乐应用/茉莉音乐1.0.2.apk) | 🟢    | 高级版，全网音乐免费听与下载                                 |
-| ES文件浏览器            | v4.4.3.5   | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/实用工具/ES文件浏览器4.4.3.5会员版-辰夕.apk) | 🟢    | 解锁所有付费VIP会员特权、免广告，登录既是永久 VIP            |
-| 淘知学堂TV              | v1.0.0      | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/教育学习/淘知学堂TV已解锁会员.apk) | 🟢    | 本软件适合学生或家中有学生的安装，解锁高级特权，所有内容无限制播放，足不出户在家就能随时 随地高效学习。 |
-| 宝盒TV(FM内置版)        | v4.1.3      | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/影视/宝盒TV版4.1.3(FM内置版).apk) | 🟢    | 基于Fongmi影视壳子内置开发的宝盒                             |
-| MediaMix(521影视)       | v1.4.8      | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/影视/MediaMix(原521影视)/MediaMix(原521影视)电视版-1.4.8.apk) | 🟢    | 521是基于蜂蜜版修改的空壳应用，已改名为 `MediaMix` 包含电视版和手机版 |
-| TG音乐台                | v7.0        | [下载](https://github.com/youhunwl/TVAPP/raw/refs/heads/main/娱乐应用/TG音乐台-TV7.0本地版-游魂网络.apk) | 🟢    | TVBox壳本地版内置10万+音乐/MV资源                            |
-| ...updating             |             |                                                              |      |                                                              |
+---
 
 ## 接口源 🌟
 
@@ -229,16 +324,13 @@
  https://raw.githubusercontent.com/YanG-1989/m3u/main/yu.m3u # 斗鱼直播源
 ```
 
-## 免责声明
 
-- 🚫 本仓库仅作技术分享，所有资源版权归原作者，禁止用于商业用途！
-- ✍️ 提交要求：接受PR，APP应用需标注来源并确认无恶意代码 + 应用测试截图 + 测试时间。
+---
 
-## 赞助 🌟
+## 🙏 声明与致谢
 
-如果这个项目对你有所帮助，欢迎 Star ⭐ 本项目或请作者喝杯咖啡 ☕
-
-维护不易， 感谢您的支持！这将让本项目可以继续走下去。
+- 🚫 **免责声明**：本项目仅作技术分享与自动化构建演示，所有资源版权归原作者，严禁商业用途！
+- 🔗 **数据来源**：核心数据与文件实时同步自大神仓库 [youhunwl/TVAPP](https://github.com/youhunwl/TVAPP)。
+- ☕ **赞助原作者**：维护不易，如果这些应用对你有所帮助，**请务必扫描下方二维码支持原作者**，这将让开源生态继续走下去！
 
 <img src="https://github.com/user-attachments/assets/d3ab1e47-9409-4636-bb7a-25803dcd2cbd" width="50%">
-
