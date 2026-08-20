@@ -15,8 +15,8 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           TARGET_REPO: ${{ github.repository }}
         run: |
-          # 扫描最近 3 个版本，找回 5.0.3 和 5.0.5
-          gh api repos/lystv/fmapp/releases | jq -c '[.[] | select(.tag_name | ascii_downcase | contains("pro"))] | .[0:3] | .[]' | while read -r rel_node; do
+          # ⚠️ 放宽限制：扫描最近 8 个版本
+          gh api repos/lystv/fmapp/releases | jq -c '[.[] | select(.tag_name | ascii_downcase | contains("pro"))] | .[0:8] | .[]' | while read -r rel_node; do
             [ -z "$rel_node" ] && continue
             raw_tag=$(echo "$rel_node" | jq -r '.tag_name')
             my_tag="FM-${raw_tag}"
@@ -32,6 +32,38 @@ jobs:
             # 重新创建并正确上传 APK
             if ! gh release view "$my_tag" -R "$TARGET_REPO" >/dev/null 2>&1; then
               gh release create "$my_tag" -R "$TARGET_REPO" --title "FMApp: $raw_tag" --notes "Auto-synced"
+              assets_urls=$(echo "$rel_node" | jq -r '.assets[] | select(.name | endswith(".apk")) | .browser_download_url')
+              for url in $assets_urls; do
+                fname=$(basename "$url")
+                curl -L -o "$fname" "$url"
+                gh release upload "$my_tag" "$fname" --clobber -R "$TARGET_REPO"
+                rm -f "$fname"
+              done
+            fi
+          done
+
+      - name: Sync WebHTV
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TARGET_REPO: ${{ github.repository }}
+        run: |
+          # ⚠️ 放宽限制：扫描 WebHTV 最近 8 个版本
+          gh api repos/fish2018/webhtv/releases | jq -c '.[0:8] | .[]' | while read -r rel_node; do
+            [ -z "$rel_node" ] && continue
+            raw_tag=$(echo "$rel_node" | jq -r '.tag_name')
+            my_tag="WH-${raw_tag}"
+            
+            # 自动化清理空壳
+            apk_count=$(gh release view "$my_tag" -R "$TARGET_REPO" --json assets --jq '[.assets[] | select(.name | endswith(".apk"))] | length' 2>/dev/null || echo "0")
+            if gh release view "$my_tag" -R "$TARGET_REPO" >/dev/null 2>&1 && [ "$apk_count" -eq "0" ]; then
+              echo "🗑️ 检测到空壳 Release: $my_tag，正在删除重置..."
+              gh release delete "$my_tag" -y --cleanup-tag -R "$TARGET_REPO"
+              sleep 2
+            fi
+            
+            # 重新创建并正确上传 APK
+            if ! gh release view "$my_tag" -R "$TARGET_REPO" >/dev/null 2>&1; then
+              gh release create "$my_tag" -R "$TARGET_REPO" --title "WebHTV: $raw_tag" --notes "Auto-synced from fish2018/webhtv"
               assets_urls=$(echo "$rel_node" | jq -r '.assets[] | select(.name | endswith(".apk")) | .browser_download_url')
               for url in $assets_urls; do
                 fname=$(basename "$url")
@@ -75,7 +107,7 @@ jobs:
           echo "🟠 [索引] 正在扫描 223+ APK 文件的真实历史..."
           rm -f repo_files_raw.txt
 
-          # A. 全盘扫描 (坚如磐石的 while 循环版，彻底告别单引号地狱)
+          # A. 全盘扫描 (坚如磐石的 while 循环版)
           while IFS= read -r -d '' filepath; do
             if [[ "$filepath" == *.apk ]] && [[ ! "$filepath" =~ ^\.github/ ]] && [[ ! "$filepath" =~ ^wiki/ ]]; then
               committime=$(git log -1 --format=%ai -- "$filepath")
@@ -83,7 +115,7 @@ jobs:
             fi
           done < <(git ls-files -z)
 
-          # 转为 JSON (利用 jq 安全注入 GitHub 仓库名)
+          # 转为 JSON 
           if [ -f repo_files_raw.txt ]; then
             cat repo_files_raw.txt | jq -R -s -c --arg repo "${{ github.repository }}" '
               split("\n") | map(select(length > 0)) | map(split("|") | {
@@ -114,7 +146,7 @@ jobs:
           jq -s 'add' repo_files.json release_assets.json > list.json
           rm -f repo_files_raw.txt
           
-          # D. 提取应用描述 (终极杀手锏：利用 Heredoc 写入独立 Python 脚本，彻底解决编码与缩进问题)
+          # D. 提取应用描述 
           echo "🟠 [描述] 正在从 README.md 提取应用介绍..."
           cat << 'EOF' > parse_desc.py
           import json, re, os
@@ -123,21 +155,17 @@ jobs:
           if os.path.exists('README.md'):
               with open('README.md', 'r', encoding='utf-8') as f:
                   for line in f:
-                      # 只抓取表格行，排除表头和分割线
                       if line.startswith('|') and 'APP名称' not in line and '---' not in line:
                           parts = [p.strip() for p in line.split('|')]
-                          # 确保表格列数够长
                           if len(parts) >= 6:
                               name = parts[1]
                               remark = parts[5]
-                              # 正则洗掉 Markdown 链接和加粗符号
                               name = re.sub(r'\[(.*?)\]\(.*?\)', r'\1', name)
                               name = name.replace('**', '').strip()
                               
                               if name and remark:
                                   desc[name] = remark
 
-          # 无论发生什么，都强制写入一个标准 JSON 对象（哪怕是空的 {}），绝不会产生 null
           with open('desc.json', 'w', encoding='utf-8') as f:
               json.dump(desc, f, ensure_ascii=False)
           EOF
@@ -145,13 +173,12 @@ jobs:
           python3 parse_desc.py
           rm -f parse_desc.py
 
-          # E. 全自动生成个性化 README (保留接口源、直播源与致谢，极致排版)
+          # E. 全自动生成个性化 README
           echo "🟠 [排版] 正在根据最新数据重写 README.md..."
           cat << 'EOF' > build_readme.py
           import json
           import os
 
-          # 1. 读取应用数据
           try:
               with open('list.json', 'r', encoding='utf-8') as f:
                   apps = json.load(f)
@@ -161,27 +188,21 @@ jobs:
               print("读取 JSON 失败:", e)
               apps, desc_map = [], {}
 
-          # 2. 核心新增：提取上游原版的“接口源”和“直播源”内容，原封不动保留
           sources_content = ""
           capture = False
           if os.path.exists('README.md'):
               with open('README.md', 'r', encoding='utf-8') as f:
                   for line in f:
-                      # 遇到“接口源”标题开始抓取
                       if line.startswith('## 接口源'):
                           capture = True
-                      # 遇到“免责声明”标题停止抓取
                       if line.startswith('## 免责声明'):
                           capture = False
-                      
                       if capture:
                           sources_content += line
 
           if apps:
-              # 3. 强制将 Release 资产置顶排前，同级再按时间降序排列
               apps.sort(key=lambda x: (1 if x.get('type') == 'release_asset' else 0, x.get('time', '')), reverse=True)
 
-              # 4. 拼接我们专属的 Markdown 头部和应用表格
               md = "# 🚀 N9G9 极速应用商店\n\n"
               md += "> ⚡️ **全自动同步上游更新**，为您提供最新、最全的 TVBox 壳子与影视聚合应用。\n\n"
               
@@ -193,15 +214,15 @@ jobs:
               seen_tags = set()
 
               for app in apps:
-                  # 核心限制：仅在 README 中保留最新的 2 个 Release 版本
+                  # ⚠️ 配合上面的 8 个版本提取，这里也放宽限制，保留前 8 条展示
                   if app.get('type') == 'release_asset':
                       tag = app.get('path', '').split('/')[1] if 'Releases/' in app.get('path', '') else 'unknown'
                       seen_tags.add(tag)
-                      if len(seen_tags) > 2:
+                      if len(seen_tags) > 8:
                           continue
 
                   name = app.get('name', 'Unknown')
-                  time_str = app.get('time', '')[:10]  # 只截取 YYYY-MM-DD
+                  time_str = app.get('time', '')[:10]  
                   url = app.get('url', '#')
                   
                   app_desc = "暂无详细描述"
@@ -213,14 +234,12 @@ jobs:
                   app_desc = app_desc.replace('\n', '').replace('\r', '').replace('|', '&#124;')
                   md += f"| **{name}** | `{time_str}` | {app_desc} | [📥 下载]({url}) |\n"
 
-              # 5. 无缝插入上游原汁原味的接口源和直播源
               md += "\n---\n\n"
               if sources_content:
                   md += sources_content
               else:
                   md += "## 接口源与直播源\n\n> 暂未抓取到上游接口数据。\n\n"
 
-              # 6. 完美融合上游的致谢与打赏码
               md += "\n---\n\n"
               md += "## 🙏 声明与致谢\n\n"
               md += "- 🚫 **免责声明**：本项目仅作技术分享与自动化构建演示，所有资源版权归原作者，严禁商业用途！\n"
@@ -228,7 +247,6 @@ jobs:
               md += "- ☕ **赞助原作者**：维护不易，如果这些应用对你有所帮助，**请务必扫描下方二维码支持原作者**，这将让开源生态继续走下去！\n\n"
               md += '<img src="https://github.com/user-attachments/assets/d3ab1e47-9409-4636-bb7a-25803dcd2cbd" width="50%">\n'
 
-              # 7. 覆盖写入
               with open('README.md', 'w', encoding='utf-8') as f:
                   f.write(md)
           EOF
@@ -236,7 +254,6 @@ jobs:
           python3 build_readme.py
           rm -f build_readme.py
           
-          # 同步提交 list.json, desc.json 和重新生成的 README.md
           git add .github/workflows/ list.json desc.json README.md
           git commit -m "System: Auto-build beautiful README & Extract Desc" || exit 0
           git push origin main --force
