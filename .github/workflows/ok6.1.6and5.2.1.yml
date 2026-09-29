@@ -1,0 +1,45 @@
+name: One-shot Extract from N8G8
+on:
+  workflow_dispatch:
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Extract specified releases from sowahsun/N8G8
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TARGET_REPO: ${{ github.repository }} # 你的仓库 sowahsun/N9G9
+          UPSTREAM: "sowahsun/N8G8"
+        run: |
+          for raw_tag in "ok-base-5.1.6" "FM-5.2.1-pro"; do
+            my_tag="$raw_tag" # 直接使用原 tag 名
+            
+            # 检查本地是否已存在，避免重复创建
+            if gh release view "$my_tag" -R "$TARGET_REPO" >/dev/null 2>&1; then
+              echo "⏭️ 已存在，跳过: $my_tag"
+              continue
+            fi
+            
+            # 从 N8G8 获取该 Release 的信息
+            rel_node=$(gh api "repos/$UPSTREAM/releases/tags/$raw_tag" 2>/dev/null) || {
+              echo "❌ 上游 N8G8 不存在该版本: $raw_tag"
+              continue
+            }
+            
+            echo "➕ 正在从 N8G8 搬运: $my_tag"
+            # 在你的仓库创建 Release
+            gh release create "$my_tag" -R "$TARGET_REPO" \
+              --title "FMApp: $raw_tag" --notes "Extracted from $UPSTREAM@$raw_tag"
+            
+            # 下载并上传 APK 资产
+            assets_urls=$(echo "$rel_node" | jq -r '.assets[] | select(.name | endswith(".apk")) | .browser_download_url')
+            for url in $assets_urls; do
+              fname=$(basename "$url")
+              curl -L -o "$fname" "$url"
+              gh release upload "$my_tag" "$fname" --clobber -R "$TARGET_REPO"
+              rm -f "$fname"
+            done
+          done
